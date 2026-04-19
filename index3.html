@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>中国古代桥梁文化数据百科</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            中国古代桥梁文化数据百科
+            <div class="nav-container">
+                <div class="nav-bar">
+                    <a href="http://127.0.0.1:5500/index1.html" class="nav-item">第一页</a>
+                    <a href="http://127.0.0.1:5500/index2.html" class="nav-item">第二页</a>
+                    <a href="http://127.0.0.1:5500/index3.html" class="nav-item">第三页</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- 左侧：热门古桥 -->
+            <div class="box">
+                <div class="box-title">热门古桥</div>
+                <div class="hot-list" id="hotListBox">
+                    <div class="hot-item active" data-id="zhaozhou">
+                        <div class="img-box"><img src="images/zhaozhou.jpg" alt="赵州桥"></div>
+                        <div class="hot-info"><div class="hot-name">赵州桥</div><div class="hot-desc">隋代｜河北赵县</div><div class="hot-desc">“水从碧玉环中过，人在苍龙背上行”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="lugou">
+                        <div class="img-box"><img src="images/lugou.jpg" alt="卢沟桥"></div>
+                        <div class="hot-info"><div class="hot-name">卢沟桥</div><div class="hot-desc">金代｜北京丰台</div><div class="hot-desc">“卢沟晓月”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="guangji">
+                        <div class="img-box"><img src="images/guangji.jpg" alt="广济桥"></div>
+                        <div class="hot-info"><div class="hot-name">广济桥</div><div class="hot-desc">宋代｜广东潮州</div><div class="hot-desc">“一里长桥一里市”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="luoyang">
+                        <div class="img-box"><img src="images/luoyang.jpg" alt="洛阳桥"></div>
+                        <div class="hot-info"><div class="hot-name">洛阳桥</div><div class="hot-desc">宋代｜福建泉州</div><div class="hot-desc">“海内第一桥”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="anping">
+                        <div class="img-box"><img src="images/anping.jpg" alt="安平桥"></div>
+                        <div class="hot-info"><div class="hot-name">安平桥</div><div class="hot-desc">宋代｜福建晋江</div><div class="hot-desc">“白虹遥跨海门秋”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="wuting">
+                        <div class="img-box"><img src="images/wuting.jpg" alt="五亭桥"></div>
+                        <div class="hot-info"><div class="hot-name">五亭桥</div><div class="hot-desc">清代｜江苏扬州</div><div class="hot-desc">“扬州好，高跨五亭桥”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="luding">
+                        <div class="img-box"><img src="images/luding.jpg" alt="泸定桥"></div>
+                        <div class="hot-info"><div class="hot-name">泸定桥</div><div class="hot-desc">清代｜四川泸定</div><div class="hot-desc">“飞夺泸定桥”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="baodai">
+                        <div class="img-box"><img src="images/baodai.jpg" alt="宝带桥"></div>
+                        <div class="hot-info"><div class="hot-name">宝带桥</div><div class="hot-desc">唐代｜江苏苏州</div><div class="hot-desc">“宝带桥边，水阔云低”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="feng">
+                        <div class="img-box"><img src="images/feng.jpg" alt="枫桥"></div>
+                        <div class="hot-info"><div class="hot-name">枫桥</div><div class="hot-desc">明清｜江苏苏州</div><div class="hot-desc">“枫桥月落乌啼处，更有何人继绝响”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="yudai">
+                        <div class="img-box"><img src="images/yudai.jpg" alt="玉带桥"></div>
+                        <div class="hot-info"><div class="hot-name">玉带桥</div><div class="hot-desc">清代｜北京颐和园</div><div class="hot-desc">“螺黛一痕平铺明月镜，虹光百尺横映水晶帘”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="yongtong">
+                        <div class="img-box"><img src="images/yongtong.jpg" alt="永通桥"></div>
+                        <div class="hot-info"><div class="hot-name">永通桥</div><div class="hot-desc">唐代｜河北赵县</div><div class="hot-desc">“永通古渡走车尘”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="wanan">
+                        <div class="img-box"><img src="images/wanan.jpg" alt="万安桥"></div>
+                        <div class="hot-info"><div class="hot-name">万安桥</div><div class="hot-desc">宋代｜福建泉州</div><div class="hot-desc">“长桥跨涧静无声”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="shuanglong">
+                        <div class="img-box"><img src="images/shuanglong.jpg" alt="双龙桥"></div>
+                        <div class="hot-info"><div class="hot-name">双龙桥</div><div class="hot-desc">清代｜云南建水</div><div class="hot-desc">“双龙卧波，气贯长虹”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="gongchen">
+                        <div class="img-box"><img src="images/gongchen.jpg" alt="拱宸桥"></div>
+                        <div class="hot-info"><div class="hot-name">拱宸桥</div><div class="hot-desc">明代｜浙江杭州</div><div class="hot-desc">“拱宸桥头望运河”</div></div>
+                    </div>
+                    <div class="hot-item" data-id="shiqikong">
+                        <div class="img-box"><img src="images/shiqikong.jpg" alt="十七孔桥"></div>
+                        <div class="hot-info"><div class="hot-name">十七孔桥</div><div class="hot-desc">清代｜北京颐和园</div><div class="hot-desc">“虹卧石梁，岸接蓬莱”</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中间：详情 -->
+            <div class="box">
+                <div class="box-title" style="visibility: hidden; height: 0; margin: 0; padding: 0; border: none;"></div>
+                <div class="main-content" id="bridgeDetail">
+                    <div class="main-top">
+                        <div class="main-img-box"><img id="bigImg" src="images/zhaozhou.jpg" alt="桥梁大图"></div>
+                        <div class="main-info">
+                            <div class="main-name" id="detailName">赵州桥</div>
+                            <div class="main-meta" id="detailMeta"></div>
+                            <div class="tags" id="detailTags"></div>
+                        </div>
+                    </div>
+                    <div class="section-title">简介</div>
+                    <div class="section-desc" id="detailDesc"></div>
+                    <div class="section-title">建造工艺</div>
+                    <div class="section-desc" id="detailCraft"></div>
+                    <div class="section-title">历史典故</div>
+                    <div class="section-desc" id="detailStory"></div>
+                    <div class="section-title">特征</div>
+                    <div class="section-desc" id="detailFeature"></div>
+                    <div class="section-title">价值</div>
+                    <div class="section-desc" id="detailValue"></div>
+                    <div class="footer-row">
+                        <div class="footer-col"><h4>相关景区</h4><ul id="detailSites"></ul></div>
+                        <div class="footer-col"><h4>同类古桥</h4><ul id="detailSimilar"></ul></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：热评 -->
+            <div class="box">
+                <div class="box-title">古桥热评</div>
+                <div class="comment-list" id="commentBox">
+                    <div class="comment-item"><div class="comment-user">山河故人</div><div class="comment-time">2025-03-12 10:23</div><div class="comment-content">每一座古桥都是活着的历史，走过它们就像穿越千年时光，太震撼了。</div><div class="comment-like">👍 3209</div></div>
+                    <div class="comment-item"><div class="comment-user">建筑学生小周</div><div class="comment-time">2025-03-10 14:15</div><div class="comment-content">从结构学到美学设计，中国古桥真的是世界建筑史上的奇迹。</div><div class="comment-like">👍 5721</div></div>
+                    <div class="comment-item"><div class="comment-user">旅行者阿凯</div><div class="comment-time">2025-03-05 09:30</div><div class="comment-content">已经打卡五座名桥，最喜欢江南廊桥，烟雨朦胧中意境绝美。</div><div class="comment-like">👍 2138</div></div>
+                    <div class="comment-item"><div class="comment-user">文化爱好者</div><div class="comment-time">2025-03-01 20:17</div><div class="comment-content">古桥不仅是交通建筑，更是诗词、传说、民俗的载体，值得代代守护。</div><div class="comment-like">👍 8942</div></div>
+                    <div class="comment-item"><div class="comment-user">历史老师王老师</div><div class="comment-time">2025-02-26 16:40</div><div class="comment-content">上课必讲中国古桥，这是最直观、最震撼的中华智慧教育素材。</div><div class="comment-like">👍 4315</div></div>
+                    <div class="comment-item"><div class="comment-user">摄影爱好者阿明</div><div class="comment-time">2025-03-08 15:42</div><div class="comment-content">拍古桥真的太出片了！尤其是日出时分的赵州桥，光影绝了。</div><div class="comment-like">👍 1876</div></div>
+                    <div class="comment-item"><div class="comment-user">文物保护志愿者</div><div class="comment-time">2025-02-18 09:12</div><div class="comment-content">守护古桥就是守护我们的文化根脉，希望更多人关注古桥保护。</div><div class="comment-like">👍 6543</div></div>
+                    <div class="comment-item"><div class="comment-user">古建筑设计师</div><div class="comment-time">2025-03-15 11:30</div><div class="comment-content">古人的营造智慧太牛了，赵州桥的敞肩拱设计领先世界上千年！</div><div class="comment-like">👍 7219</div></div>
+                    <div class="comment-item"><div class="comment-user">旅行博主小夏</div><div class="comment-time">2025-03-20 18:05</div><div class="comment-content">沿着古桥走一遍中国，每一座桥都藏着一段故事，太治愈了。</div><div class="comment-like">👍 3687</div></div>
+                    <div class="comment-item"><div class="comment-user">非遗传承人</div><div class="comment-time">2025-02-22 14:28</div><div class="comment-content">古桥营造技艺是非遗，我们要把这份手艺传承下去，让古桥永远屹立。</div><div class="comment-like">👍 5102</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/page2.js"></script>
+</body>
+</html>

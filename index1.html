@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国古代桥梁文化数据可视化大屏</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/page1.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            中国古代桥梁文化数据可视化大屏
+            <div class="nav-container">
+                <div class="nav-bar">
+                <div class="nav-bar">
+                    <a href="http://127.0.0.1:5500/index1.html" class="nav-item">第一页</a>
+                    <a href="http://127.0.0.1:5500/index2.html" class="nav-item">第二页</a>
+                    <a href="http://127.0.0.1:5500/index3.html" class="nav-item">第三页</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="box-title">历代桥梁数量趋势</div>
+                <div id="chart1" class="chart"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">文化传承核心指标</div>
+                <div id="chart3" class="chart"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">建造技艺传承现状</div>
+                <div id="chart5" class="chart"></div>
+            </div>
+
+            <div class="box center-box">
+                <div class="box-title">全国古代桥梁地域分布</div>
+                <div id="mapChart" class="chart"></div>
+            </div>
+
+            <div class="box">
+                <div class="box-title">古桥文创产品销量统计 & 占比趋势</div>
+                <div id="chart2" class="chart"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">知名古桥热度TOP8</div>
+                <div id="chart4" class="chart"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">实时文化活动动态</div>
+                <table class="table">
+                    <thead>
+                        <tr><th>活动名称</th><th>时间</th><th>地点</th><th>参与人数</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>赵州桥文化节</td><td>2023-05-01</td><td>河北赵县</td><td>12000</td></tr>
+                        <tr><td>古桥技艺展</td><td>2023-09-15</td><td>北京故宫</td><td>8500</td></tr>
+                        <tr><td>桥梁文化论坛</td><td>2023-11-20</td><td>福建泉州</td><td>3200</td></tr>
+                        <tr><td>古桥摄影大赛</td><td>2023-12-05</td><td>广东潮州</td><td>5600</td></tr>
+                        <tr><td>古桥保护研讨会</td><td>2024-03-10</td><td>浙江绍兴</td><td>4800</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="box bottom-center-box">
+                <div class="box-title">古桥非遗传承人智库</div>
+                <div style="display: flex; height: calc(100% - 35px); gap: 10px;">
+                    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="num-card" style="flex: 1; margin-bottom: 1px;">
+                            <div class="num-title">全国古桥非遗传承人总数</div>
+                            <div class="num-value">326</div>
+                        </div>
+                        <div class="num-card" style="flex: 1; margin-bottom: 1px;">
+                            <div class="num-title">国家级古桥非遗传承人总数</div>
+                            <div class="num-value">42</div>
+                        </div>
+                        <div class="num-card" style="flex: 1;">
+                            <div class="num-title">省级古桥非遗传承人总数</div>
+                            <div class="num-value">187</div>
+                        </div>
+                    </div>
+                    <div style="flex: 2;">
+                        <table class="table">
+                            <thead>
+                                <tr><th>传承人姓名</th><th>核心技艺</th><th>代表地域</th><th>传承级别</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>何礼义</td><td>木拱廊桥营造技艺</td><td>福建寿宁</td><td>国家级</td></tr>
+                                <tr><td>郑多金</td><td>木拱廊桥营造技艺</td><td>福建屏南</td><td>国家级</td></tr>
+                                <tr><td>王挺良</td><td>赵州桥建造技艺</td><td>河北赵县</td><td>省级</td></tr>
+                                <tr><td>黄民</td><td>广济桥浮桥技艺</td><td>广东潮州</td><td>省级</td></tr>
+                                <tr><td>陈守志</td><td>洛阳桥营造技艺</td><td>福建泉州</td><td>市级</td></tr>
+                                <tr><td>张阿婆</td><td>浙南廊桥榫卯技艺</td><td>浙江泰顺</td><td>市级</td></tr>
+                                <tr>
+                                    <td>李永昌</td>
+                                    <td>石拱桥营造技艺</td>
+                                    <td>河北赵县</td>
+                                    <td>省级</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="flex: 1;">
+                        <div id="pieChart" style="width: 100%; height: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/page1.js"></script>
+</body>
+</html>
