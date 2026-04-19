@@ -1,0 +1,195 @@
+/* 公共样式 - 三页共用 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #0d3350 0%, #082238 100%);
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+.screen {
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    background: url('../images/q.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.header {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 4px;
+    padding-top: 20px;
+}
+
+.container {
+    padding: 20px;
+    height: calc(100% - 80px);
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(107, 181, 224, 0.3);
+    border-radius: 12px;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6bb5e0, #3a8fc2, transparent);
+}
+
+.box:hover {
+    border-color: rgba(107, 181, 224, 0.6);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.box-title {
+    font-size: 16px;
+    background: linear-gradient(135deg, #8ac4e8, #4a9ecf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    border-left: 3px solid #4a9ecf;
+    font-weight: 600;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+.chart {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+}
+
+.num-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(13, 51, 80, 0.85);
+    border: 1px solid rgba(107, 181, 224, 0.5);
+    border-radius: 16px;
+    padding: 10px 0;
+    transition: 0.3s ease;
+    flex: 1;
+    box-shadow: 0 0 18px rgba(107, 181, 224, 0.4), 0 0 32px rgba(74, 158, 207, 0.25);
+}
+
+.num-title {
+    font-size: 14px;
+    color: #a8cce6;
+    margin-bottom: 8px;
+}
+
+.num-value {
+    font-size: 34px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #8ac4e8, #3a8fc2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* 导航栏 - 三页共用 */
+.nav-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    background: transparent;
+    padding: 0 20px;
+    height: 60px;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-container:hover .nav-bar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item {
+    color: #8ac4e8;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 4px;
+    background: rgba(13, 51, 80, 0.6);
+    transition: all 0.3s ease;
+    font-size: 15px;
+    border: 1px solid rgba(107, 181, 224, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.nav-item:hover {
+    background: rgba(107, 181, 224, 0.3);
+    color: #fff;
+    border-color: rgba(107, 181, 224, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 181, 224, 0.2);
+}
+
+/* 表格样式 */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 8px 5px;
+    text-align: center;
+    border-bottom: 1px solid rgba(107, 181, 224, 0.2);
+    color: #e0f0f5;
+}
+
+.data-table th {
+    background: linear-gradient(135deg, #6bb5e0, #3a8fc2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+.data-table tr:hover {
+    background: rgba(107, 181, 224, 0.1);
+}
+
+.scroll-table {
+    overflow-y: auto;
+    flex: 1;
+}

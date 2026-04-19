@@ -1,0 +1,254 @@
+/* 第二页特有样式 - 00094.html */
+body {
+    background: #0a1a3a;
+    /* overflow: hidden; */
+}
+
+.screen {
+    background: url('../images/q.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.sub-header {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #66ccff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.box {
+    background: transparent;
+    border: 1px solid rgba(107, 181, 224, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-title {
+    font-size: 20px;
+    color: #66ccff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(102, 204, 255, 0.3);
+}
+
+/* 左侧列表 */
+.hot-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: thin;
+}
+
+.hot-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    background: rgba(102, 204, 255, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-height: 90px;
+    margin-bottom: 12px;
+}
+
+.hot-item:hover,
+.hot-item.active {
+    background: rgba(102, 204, 255, 0.2);
+    border-left: 3px solid #66ccff;
+}
+
+.img-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot-info {
+    flex: 1;
+}
+
+.hot-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #66ccff;
+    margin-bottom: 4px;
+}
+
+.hot-desc {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+/* 中间内容 */
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.main-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.main-img-box {
+    width: 30%;
+    aspect-ratio: 4/3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-info {
+    flex: 1;
+}
+
+.main-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #66ccff;
+    margin-bottom: 15px;
+}
+
+.main-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #eee;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 18px;
+    background: rgba(102, 204, 255, 0.2);
+    border-radius: 4px;
+    color: #66ccff;
+    font-size: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #66ccff;
+    margin: 8px 0 6px;
+    padding-left: 10px;
+    border-left: 4px solid #66ccff;
+}
+
+.section-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #eee;
+    text-indent: 2em;
+    margin-bottom: 6px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(102, 204, 255, 0.2);
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #66ccff;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    font-size: 18px;
+    color: #eee;
+    line-height: 1.8;
+}
+
+/* 右侧热评 */
+.comment-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: thin;
+}
+
+.comment-item {
+    padding: 15px;
+    background: rgba(102, 204, 255, 0.05);
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.comment-user {
+    font-size: 15px;
+    color: #66ccff;
+    margin-bottom: 5px;
+}
+
+.comment-time {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.comment-content {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #eee;
+}
+
+.comment-like {
+    text-align: right;
+    font-size: 13px;
+    color: #66ccff;
+    margin-top: 8px;
+}

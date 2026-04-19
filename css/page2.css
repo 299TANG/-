@@ -1,0 +1,38 @@
+/* 第三页特有样式 - 000623.html */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    gap: 12px;
+}
+
+/* ========= 透明卡片样式覆盖 ========= */
+/* 智能监测明细中的4个小数据表背景透明 */
+.num-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none;
+}
+
+/* 确保仪表盘容器无背景 */
+#gaugeComplete,
+#gaugeFund {
+    background: transparent;
+}
